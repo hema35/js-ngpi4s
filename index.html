@@ -11,7 +11,7 @@
 
 </html> -->
 
-<html>
+<!-- <html>
 
 <head>
   <title>Calling Functions</title>
@@ -26,4 +26,21 @@
   <input type="button" onclick="sayHello()" value="Say Hello">
 </body>
 
-</html>
+</html> -->
+
+<head>
+  <title>Function to output user messages</title>
+</head>
+<script>
+  function buttonReport(buttonId, buttonName, buttonValue) {
+    const userMessage1 = "Button id:" + buttonId + "\n";
+    const userMessage2 = "Button name:" + buttonName + "\n";
+    const userMessage3 = "Button value:" + buttonValue + "\n";
+    alert(userMessage1+ userMessage2 + userMessage3);
+  }
+</script>
+
+<body>
+  <input type="button" id="id1" onclick="buttonReport()"
+    name="Button1"  value="Something">
+</body>
