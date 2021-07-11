@@ -28,10 +28,9 @@
 
 </html> -->
 
-<head>
+<!-- <head>
   <title>Function to output user messages</title>
-</head>
-<script>
+  <script>
   function buttonReport(buttonId, buttonName, buttonValue) {
     const userMessage1 = "Button id:" + buttonId + "\n";
     const userMessage2 = "Button name:" + buttonName + "\n";
@@ -39,8 +38,52 @@
     alert(userMessage1+ userMessage2 + userMessage3);
   }
 </script>
+</head>
+
 
 <body>
   <input type="button" id="id1" onclick="buttonReport(this.id, this.name, this.value)"
-    name="Button1"  value="Something">
+    name="Left Hand Button"  value="Left">
+  <input type="button" id="id2" onclick="buttonReport(this.id, this.name, this.value)"
+    name="Center Button"  value="Center">
+  <input type="button" id="id3" onclick="buttonReport(this.id, this.name, this.value)"
+    name="Right Hand Button"  value="Right">
+</body> -->
+
+<!-- <html>
+
+<head>
+  <script>
+    function cube(x){
+  return x*x*x; 
+}
+  </script>
+</head>
+
+<body>
+
+  <div onclick="alert(cube(3))">jhgjgjh
+
+  </div>
 </body>
+
+</html> -->
+<html>
+<head>
+  <title>
+    Variable Scope</title>
+</head>
+<body>
+  <script>
+    let a = 10;
+    let b = 10;
+    function show(){
+      let a = 20;
+      b = 10;
+      return "Local 'a' = "  + a + "\nGlobal 'b' =" + b;
+    }
+    let message = show()
+    alert(message +" \n Global 'a' = " +a );
+    </script>
+</body>
+</html>
