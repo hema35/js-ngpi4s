@@ -69,10 +69,12 @@
 
 </html> -->
 <html>
+
 <head>
   <title>
     Variable Scope</title>
 </head>
+
 <body>
   <script>
     let a = 10;
@@ -80,10 +82,13 @@
     function show(){
       let a = 20;
       b = 10;
-      return "Local 'a' = "  + a + "\nGlobal 'b' =" + b;
+      // return "Local 'a' = "  + a + "\nGlobal 'b' =" + b;
+      return "a =" +a   ;
+    
     }
     let message = show()
     alert(message +" \n Global 'a' = " +a );
-    </script>
+  </script>
 </body>
+
 </html>
